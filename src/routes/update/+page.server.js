@@ -1,30 +1,30 @@
 import PocketBase from 'pocketbase';
 
 
-export async function load({}){
+export async function load({ }) {
     const pb = new PocketBase('https://task.pockethost.io');
     const records = await pb.collection('tasklist').getFullList(200 /* batch size */, {
         sort: '-created',
     });
 
-    const results = records.map((record)=> {return {task:record.task,id: record.id}})
+    const results = records.map((record) => { return { task: record.task, id: record.id } })
 
-    return{
+    return {
         records: results
     }
 }
 
 
-export const actions={
-    update: async({request})=>{
+export const actions = {
+    update: async ({ request }) => {
         const pb = new PocketBase('https://task.pockethost.io');
 
         const form = await request.formData();
 
-        const task = form.get('task')?? '';
-        const id = form.get('id')??'';
+        const task = form.get('task') ?? '';
+        const id = form.get('id') ?? '';
 
-        const data={
+        const data = {
             task,
         }
         await pb.collection('tasklist').update(id, data);

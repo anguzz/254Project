@@ -1,13 +1,11 @@
 <script>
-    export let data;
-
+	export let data;
 </script>
 
-
 <div>
-    <ol>
-        {#each data?.records as record}
-        <li>{`${record.task}`}</li>
-        {/each}
-    </ol>
+	<ol>
+		{#each data?.records as record}
+			<li>{`${record.task}`}</li>
+		{/each}
+	</ol>
 </div>
