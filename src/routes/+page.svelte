@@ -1,6 +1,17 @@
+<script>
+	export let data;
+</script>
+<h3>Todo</h3>
 
-<h3>Todo list</h3>
 
+
+<div>
+	<ol>
+		{#each data?.records as record}
+			<li>{`${record.task}`}</li>
+		{/each}
+	</ol>
+</div>
 
 
 <style>
