@@ -1,5 +1,4 @@
-
-<style>
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" ><style>
 
 .sidebar {
   height: 100%;
