@@ -9,11 +9,11 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: navy;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-}
+  font-family:'Poppins', sans-serif;}
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
@@ -24,9 +24,21 @@
   transition: 0.3s;
 }
 
-.sidebar a:hover {
-  color: #f1f1f1;
+.sidebar a:before{
+  position: absolute;
+  content: " "; 
+  height: 33%;
+  width:0;
+  bottom: 66%;
+  left: 0;
+  background-color: white; 
 }
+.sidebar a:hover { 
+  color: #f1f1f1;
+  display:block;
+
+}
+
 
 .sidebar .closebtn {
   position: absolute;
@@ -69,6 +81,7 @@
   <a href="/delete">Remove</a>
   <a href="/update">Update</a>
   <a href="/">View</a>
+  <a href="/calendar">Calendar</a>
 
 </div>
 

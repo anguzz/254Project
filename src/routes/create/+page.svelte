@@ -1,11 +1,15 @@
-<form method="post" action="?/create">
-	<h3>Add task </h3>
-	<input type="text" required name="task" />
+<body>
+	<form method="post" action="?/create">
+		<h3>Add task </h3>
+		<input type="text" required name="task" />
 
-	<button type="submit">add</button>
-</form>
+		<button type="submit">add</button>
+	</form>
 
 <style>
+	body{
+		background-color: grey;
+	}
 	form {
 		margin-top: 0.5em;
 		display: flex;
@@ -15,3 +19,5 @@
 		margin: 0.5em;
 	}
 </style>
+
+</body>

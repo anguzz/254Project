@@ -1,6 +1,7 @@
 <script>
 	export let data;
 </script>
+<body>
 <h3>Todo</h3>
 
 
@@ -15,6 +16,9 @@
 
 
 <style>
+    body{
+        background-color: grey; 
+    }
     a{
         text-decoration: none;
         color:#1034e8;
@@ -25,3 +29,4 @@
         text-decoration: underline;
     }
 </style>
+</body>
