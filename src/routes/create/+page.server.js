@@ -7,9 +7,11 @@ export const actions = {
         const form = await request.formData();
 
         const task = form.get('task') ?? '';
+        const date = form.get('date') ?? '';
 
         const data = {
             task,
+            date, 
 
         };
 

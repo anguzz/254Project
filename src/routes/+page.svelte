@@ -9,7 +9,7 @@
 <div>
 	<ol>
 		{#each data?.records as record}
-			<li>{`${record.task}`}</li>
+			<li>{`${record.task} - ${record.date}`}</li>
 		{/each}
 	</ol>
 </div>
