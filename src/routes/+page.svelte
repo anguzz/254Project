@@ -6,7 +6,7 @@
 
 <<<<<<< Updated upstream
 =======
-<h3>Todo <img src="src/routes/checkbox.jpg" alt="Check Mark Logo" width="50" height="50"> </h3>
+<h3>Todo <img src="src/routes/kittycheck.jpg" alt="Check Mark Logo" width="50" height="50"> </h3>
 >>>>>>> Stashed changes
 
 
