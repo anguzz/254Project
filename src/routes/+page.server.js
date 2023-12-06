@@ -6,13 +6,16 @@ export async function load({ }) {
         sort: '-created',
     });
 
-    const results = records.map((record) => { return { task: record.task, date: record.date, id: record.id } })
+    const results = records.map((record) => {
+        // Format the date to 'MM-DD-YY'
+        const formattedDate = record.date.slice(5, 10) + '-' + record.date.slice(2, 4);
+        return { task: record.task, date: formattedDate, id: record.id };
+    });
 
     return {
         records: results
-    }
+    };
 }
-
 
 export const actions = {
     update: async ({ request }) => {
@@ -21,14 +24,13 @@ export const actions = {
         const form = await request.formData();
 
         const task = form.get('task') ?? '';
-        const date = form.get('date') ?? ''; 
+        const date = form.get('date') ?? '';
         const id = form.get('id') ?? '';
 
         const data = {
             task,
-            date, 
-        }
+            date,
+        };
         await pb.collection('tasklist').update(id, data);
-
     }
-}
+};
