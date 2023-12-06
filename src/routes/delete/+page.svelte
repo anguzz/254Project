@@ -10,7 +10,7 @@
 <div>
     <ol>
         {#each data?.records as record,index}
-        <li> <input id={`job-checkbox-${index}`} checked={selectedItem?.task === record.task} type="checkbox" value={JSON.stringify(record)} on:click={()=> selectedItem = (selectedItem?.task !== record.task)? record  : undefined}/>{`${record.task}  `}</li>
+        <li> <input id={`job-checkbox-${index}`} checked={selectedItem?.task === record.task} type="checkbox" value={JSON.stringify(record)} on:click={()=> selectedItem = (selectedItem?.task !== record.task)? record  : undefined}/>{`${record.task} - ${record.date} `}</li>
         {/each}
     </ol>
     {#if selectedItem}

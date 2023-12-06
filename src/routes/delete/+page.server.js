@@ -7,7 +7,7 @@ export async function load({ }) {
         sort: '-created',
     });
 
-    const results = records.map((record) => { return { task: record.task, id: record.id } })
+    const results = records.map((record) => { return { task: record.task, date: record.date, id: record.id } })
 
     return {
         records: results

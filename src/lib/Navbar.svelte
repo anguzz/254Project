@@ -81,7 +81,6 @@
   <a href="/delete">Remove</a>
   <a href="/update">Update</a>
   <a href="/">View</a>
-  <a href="/calendar">Calendar</a>
 
 </div>
 
