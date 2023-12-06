@@ -5,7 +5,7 @@
 </script>
 
 
-
+<body>
 <h3>Remove task </h3>
 <div>
     <ol>
@@ -29,7 +29,13 @@
 </div>
 
 
+
 <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: grey;
+    }
     form{
         margin-top: .5em;
         display: flex;
@@ -43,3 +49,5 @@
         margin:0;
     }
 </style>
+
+</body>

@@ -6,7 +6,7 @@
 
 </script>
 
-
+<body>
 <h3>Update task </h3>
 <div>
     <ol>
@@ -27,6 +27,9 @@
 
 
 <style>
+    body{
+        background-color: grey; 
+    }
     form{
         margin-top: .5em;
         display: flex;
@@ -36,3 +39,4 @@
         margin:.5em;
     }
 </style>
+</body>
