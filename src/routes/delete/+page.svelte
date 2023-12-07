@@ -34,7 +34,7 @@
     body{
         margin: 0;
         padding: 0;
-        background-color: grey;
+        background-color: #181a1a;
     }
     form{
         margin-top: .5em;

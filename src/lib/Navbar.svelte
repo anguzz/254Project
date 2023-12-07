@@ -9,7 +9,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: navy;
+  background-color: rgb(9, 31, 68);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -19,7 +19,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }

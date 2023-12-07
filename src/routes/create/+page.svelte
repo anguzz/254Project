@@ -11,7 +11,7 @@
 
 <style>
 	body{
-		background-color: grey;
+		background-color: #181a1a;
 	}
 	form {
 		margin-top: 0.5em;
