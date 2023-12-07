@@ -9,21 +9,34 @@
   z-index: 1;
   top: 0;
   left: 0;
+<<<<<<< Updated upstream
   background-color: navy;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   font-family:'Poppins', sans-serif;}
+=======
+  background-color: #000162;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+>>>>>>> Stashed changes
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
+<<<<<<< Updated upstream
   color: #818181;
+=======
+  color: #FFFFF;
+>>>>>>> Stashed changes
   display: block;
   transition: 0.3s;
 }
 
+<<<<<<< Updated upstream
 .sidebar a:before{
   position: absolute;
   content: " "; 
@@ -40,6 +53,12 @@
 }
 
 
+=======
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+>>>>>>> Stashed changes
 .sidebar .closebtn {
   position: absolute;
   top: 0;
